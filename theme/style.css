@@ -484,6 +484,14 @@ body {
     font-size: 1em;
 }
 
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .contact-form #nombre, .contact-form #apellido{
     width: 47%;
 }
@@ -496,10 +504,6 @@ body {
     cursor: pointer;
     height: 40px;
     font-weight: 500;
-}
-
-.contact-form .button:hover {
-    background-color: #202020;
 }
 
 
@@ -616,5 +620,6 @@ body {
     .contact-form {
         margin-top: 50px;
         height: 400px;
+        width: 100%;
     }
 }
