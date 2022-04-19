@@ -10,30 +10,34 @@
     <title>Espacio Contenido</title>
 </head>
 
-<body>
+<body class="grid-container">
     <!-- Header -->
-    <header>
+    <header class="header">
         <nav class="menu bg-p1-color">
-            <ul>
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/about.html">¿Quienes somos?</a></li>
-                <li><a href="./pages/services.html">Servicios</a></li>
-                <li><a href="./pages/prices.html">Precios</a></li>
-                <li><a href="./pages/contact.html">Contacto</a></li>
-            </ul>
+            <div class="menu-mobile">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbutton"><i class="fa fa-bars"></i></label>
+                <ul>
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/about.html">Sobre nosotras</a></li>
+                    <li><a href="./pages/services.html">Servicios</a></li>
+                    <li><a href="./pages/prices.html">Precios</a></li>
+                    <li><a href="./pages/contact.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="main">
         <!-- Section: Logo -->
         <div class="section bg-s1-color">
             <div class="flex-container">
                 <div class="flex-2cell ai-center jc-center">
-                    <img style="width: 100%; max-height: 50%;" src="./media/images/logo.svg" alt="Espacio Contenido">
+                    <img style="max-width: 100%; max-height: 50%;" src="./media/images/logo.svg" alt="Espacio Contenido">
                 </div>
                 <div class="flex-2cell ai-center jc-center">
-                    <img style="width: 100%; max-height: 30%;" src="./media/images/logo_text.svg" alt="Espacio Contenido">
+                    <img style="max-width: 100%; max-height: 30%;" src="./media/images/logo_text.svg" alt="Espacio Contenido">
                 </div>
             </div>
         </div>
@@ -42,15 +46,15 @@
         <div class="section bg-s2-color">
             <div class="flex-container jc-space-between">
                 <div class="imgLeftCell">
-                    <img src="./media/images/index-3.jpg" alt="Crecimiento">
+                    <img src="./media/images/open.jpg" alt="Crecimiento">
                     <p>Pensamos nuestras ideas con horizonte de perdurabilidad y crecimiento.</p>
                 </div>
                 <div class="imgCenterCell jc-center">
-                    <img class="front-img" src="./media/images/index-6.jpg" alt="Espacio Contenido">
+                    <img src="./media/images/center-img.jpg" alt="Espacio Contenido">
                 </div>
                 <div class="imgRightCell ai-flex-end jc-flex-end">
                     <p>Ofrecemos servicios <br> para potenciar marcas y emprendimientos</p>
-                    <img src="./media/images/index-5.jpg" alt="Potenciar">
+                    <img src="./media/images/notebook1.jpg" alt="Potenciar">
                 </div>
             </div>
         </div>
@@ -60,13 +64,13 @@
             <div class="flex-container">
                 <div class="flex-2cell bg-s3-color">
                     <div class="subtitle-text2 fd-column jc-center">
-                        <a class="button-servicios" href="/pages/services.html"><p>Servicios</p></a>
+                        <a class="button-servicios" href="/pages/services.html"><h2>Servicios</h2></a>
                         <div class="line-h"></div>
                     </div>
                 </div>
                 <div class="flex-2cell bg-s1-color">
                     <div class="subtitle-text2 fd-column jc-center">
-                        <a class="button-precios" href="/pages/prices.html"><p>Precios</p></a>
+                        <a class="button-precios" href="/pages/prices.html"><h2>Precios</h2></a>
                         <div class="line-h"></div>
                     </div>
                 </div>
@@ -76,9 +80,9 @@
         <!-- Section: Imagenes -->
         <div class="section-small2">
             <div class="img-x3">
-                <img src="./media/images/index-5.jpg" alt="Marketing Digital">
+                <img src="./media/images/book.jpg" alt="Marketing Digital">
                 <img src="./media/images/ideas.png" alt="Ideas">
-                <img src="./media/images/3.jpg" alt="Social Media">
+                <img src="./media/images/notebook.jpg" alt="Social Media">
             </div>
         </div>
 
@@ -88,11 +92,11 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer section-small bg-p1-color">
+    <footer class="footer">
+        <div class="section-small bg-p1-color">
             <div class="flex-container">
                 <div class="flex-2cell">
-                    <img style="max-height: 250px; max-width: 100%;" src="./media/images/logo2.svg" alt="Espacio Contenido">
+                    <img style="max-height: 250px; max-width: 100%;" src="./media/images/footer-logo.svg" alt="Espacio Contenido">
                 </div>
                 <div class="flex-2cell fd-column ai-flex-end jc-center">
                     <a href="/pages/contact.html">

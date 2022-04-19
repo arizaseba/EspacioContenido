@@ -7,47 +7,107 @@
     <link href="../media/images/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../theme/style.css">
-    <title>Espacio Contenido | ¿Quienes somos?</title>
+    <title>Espacio Contenido | Sobre nosotras</title>
 </head>
 
-<body>
+<body class="grid-container">
     <!-- Header -->
-    <header>
+    <header class="header">
         <nav class="menu bg-p1-color">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li class="active"><a href="about.html">¿Quienes somos?</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="prices.html">Precios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+            <div class="menu-mobile">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbutton"><i class="fa fa-bars"></i></label>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="active"><a href="about.html">Sobre nosotras</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="prices.html">Precios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Main -->
-    <main>
-        <!-- Section 1 -->
-        <div class="section bg-s1-color">
-            <div class="enConstruccion jc-center ai-center">
-                <img src="../media/images/lapiz.png" alt="Edicion">
-                <p>Sitio web <br> en construcción</p>
+    <main class="main">
+        <!-- Banner -->
+        <div class="banner bg-s1-color">
+            <img src="../media/images/banner-about.jpg" alt="Sobre nosotras">
+            <div class="banner-flex">
+                <h1>Sobre nosotras</h1>
+                <div class="line-h"></div>
             </div>
         </div>
+
+        <!-- Intro -->
+        <div class="section-small bg-s3-color">
+            <br>
+            <p class="about-1">
+            Somos un estudio jóven y creativo, que ofrece servicios para potenciar marcas y otros
+            emprendimientos a través de planes de comunicación estratégica, identidad visual, diseño
+            gráfico y web, servicios audiovisuales y community management. Tenemos experiencia,
+            visión y motivación por lo que hacemos.
+            </p>
+            <br>
+        </div>
+
+        <!-- Section: Servicios y Precios -->
+        <div class="section-small2">
+            <div class="flex-container ta-center">
+                <div class="flex-2cell bg-s1-color">
+                    <div class="subtitle-text2 fd-column jc-center ai-center">
+                        <h2>Detrás de escena</h2>
+                        <div class="line-h"></div>
+                        <br><br>
+                        <p>
+                            Venimos de diferentes recorridos universitarios:
+                            combinamos nuestra formación en cine y televisión, diseño
+                            y comunicación social. Somos apasionadas de lo que
+                            hacemos, y buscamos siempre pensar fuera de la caja.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-2cell bg-s2-color jc-center">
+                    <div class="subtitle-text2 fd-column jc-center ai-center">
+                        <h2>¿Cuáles son nuestros valores?</h2>
+                        <div class="line-h"></div>
+                        <br><br>
+                        <p>
+                            En espacio Contenido pensamos nuestras ideas con
+                            horizonte de perdurabilidad y crecimiento de nuestros/as
+                            clientes. Trabajamos ejercitando la solidaridad, la confianza
+                            y la empatía, buscando siempre la innovación Apoyamos la
+                            sustentabilidad y la contribución al medio ambiente con:
+                            <br><br>
+                            <p style="font-weight: 500; color: #E97156;">reducción de la contaminación visual, sonora y residual en cada producción</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Imagenes -->
+        <div class="img-x3">
+            <img src="../media/images/book.jpg" alt="Marketing Digital">
+            <img src="../media/images/diseno.jpg" alt="Ideas">
+            <img src="../media/images/notebook.jpg" alt="Social Media">
+        </div>
+
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer section-small bg-p1-color">
+    <footer class="footer">
+        <div class="section-small bg-p1-color">
             <div class="flex-container">
                 <div class="flex-2cell">
-                    <img style="width: 300px; height: auto;" src="../media/images/logo2.svg" alt="Espacio Contenido" title="Espacio Contenido">
+                    <img style="max-height: 250px; max-width: 100%;" src="../media/images/footer-logo.svg" alt="Espacio Contenido">
                 </div>
                 <div class="flex-2cell fd-column ai-flex-end jc-center">
-                    <a href="contact.html">
+                    <a href="/pages/contact.html">
                         <div class="button bg-s1-color">Contacto</div>
                     </a>
                     <ul>
-                        <h1>¡Seguinos en nuestras redes!</h1>
+                        <h2>¡Seguinos en nuestras redes!</h2>
                         <li>
                             <a href="https://www.facebook.com/Espacio-Contenido-590339944993691" target="_blank">
                             <i class="fa fa-facebook-square"></i> Facebook</a>

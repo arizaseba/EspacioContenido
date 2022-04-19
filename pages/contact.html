@@ -10,51 +10,74 @@
     <title>Espacio Contenido | Contacto</title>
 </head>
 
-<body>
+<body class="grid-container">
     <!-- Header -->
-    <header>
+    <header class="header">
         <nav class="menu bg-p1-color">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="about.html">¿Quienes somos?</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="prices.html">Precios</a></li>
-                <li class="active"><a href="contact.html">Contacto</a></li>
-            </ul>
+            <div class="menu-mobile">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbutton"><i class="fa fa-bars"></i></label>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre nosotras</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="prices.html">Precios</a></li>
+                    <li class="active"><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Main -->
-    <main>
-        <div class="section bg-s2-color">
-            <h3>Contacto</h3>
-            <form>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido"><br>
-                <input type="text" name="telefono" id="telefono" placeholder="Telefono"><br>
-                <input type="text" name="email" id="email" placeholder="E-mail"><br>
-                <input type="checkbox" name="promo" id="promo" checked="true">
-                <label for="promo">Deseo recibir promociones por e-mail</label><br>
-                <input type="submit" value="Enviar">
-            </form>
-            <h3>Nos encontramos en Paraná - Entre Ríos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54285.631851838494!2d-60.54998246895893!3d-31.747240722015007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1648064356014!5m2!1ses-419!2sar" width="450" height="450" allowfullscreen="" loading="lazy"></iframe>    
+    <main class="main">
+        <!-- Banner -->
+        <div class="banner bg-s1-color">
+            <img src="../media/images/banner-contact.jpg" alt="Contacto">
+            <div class="banner-flex">
+                <h1>Contacto</h1>
+                <div class="line-h"></div>
+            </div>
+        </div>
+
+
+        <div class="section-small bg-s3-color">
+            <div class="flex-container">
+                <div class="flex-2cell ai-center jc-center">
+                    <img style="max-width: 100%; max-height: 50%;" src="../media/images/hola.png" alt="">
+                </div>
+                <div class="flex-2cell ai-center jc-center">
+                    <form class="contact-form bg-s1-color fd-column jc-space-between">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                        <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+                        <input type="text" name="email" id="email" placeholder="E-mail">
+                        <!--<input type="checkbox" name="promo" id="promo" checked="true">
+                        <label for="promo">Deseo recibir promociones por e-mail</label>-->
+                        <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje">
+                        <input class="button" type="submit" id="submit" value="Enviar">
+                    </form>
+                </div>
+                <!--
+                <h3>Nos encontramos en Paraná - Entre Ríos</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54285.631851838494!2d-60.54998246895893!3d-31.747240722015007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1648064356014!5m2!1ses-419!2sar" width="450" height="450" allowfullscreen="" loading="lazy"></iframe>    
+                -->
+            </div>
         </div>
     </main>
     
     <!-- Footer -->
-    <footer>
-        <div class="footer section-small bg-p1-color">
+    <footer class="footer">
+        <div class="section-small bg-p1-color">
             <div class="flex-container">
                 <div class="flex-2cell">
-                    <img style="width: 300px; height: auto;" src="../media/images/logo2.svg" alt="Espacio Contenido" title="Espacio Contenido">
+                    <img style="max-height: 250px; max-width: 100%;" src="../media/images/footer-logo.svg" alt="Espacio Contenido">
                 </div>
                 <div class="flex-2cell fd-column ai-flex-end jc-center">
-                    <a href="contact.html">
+                    <a href="/pages/contact.html">
                         <div class="button bg-s1-color">Contacto</div>
                     </a>
                     <ul>
-                        <h1>¡Seguinos en nuestras redes!</h1>
+                        <h2>¡Seguinos en nuestras redes!</h2>
                         <li>
                             <a href="https://www.facebook.com/Espacio-Contenido-590339944993691" target="_blank">
                             <i class="fa fa-facebook-square"></i> Facebook</a>

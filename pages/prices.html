@@ -10,44 +10,49 @@
     <title>Espacio Contenido | Precios</title>
 </head>
 
-<body>
+<body class="grid-container">
     <!-- Header -->
-    <header>
+    <header class="header">
         <nav class="menu bg-p1-color">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="about.html">¿Quienes somos?</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li class="active"><a href="prices.html">Precios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+            <div class="menu-mobile">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbutton"><i class="fa fa-bars"></i></label>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre nosotras</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li class="active"><a href="prices.html">Precios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Main -->
-    <main>
-        <!-- Section 1 -->
-        <div class="section bg-s1-color">
-            <div class="enConstruccion jc-center ai-center">
-                <img src="../media/images/lapiz.png" alt="Edicion">
-                <p>Sitio web <br> en construcción</p>
+    <main class="main">
+        <!-- Banner -->
+        <div class="banner bg-s1-color">
+            <img src="../media/images/banner-prices.jpg" alt="Precios">
+            <div class="banner-flex">
+                <h1>Precios</h1>
+                <div class="line-h"></div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer section-small bg-p1-color">
+    <footer class="footer">
+        <div class="section-small bg-p1-color">
             <div class="flex-container">
                 <div class="flex-2cell">
-                    <img style="width: 300px; height: auto;" src="../media/images/logo2.svg" alt="Espacio Contenido" title="Espacio Contenido">
+                    <img style="max-height: 250px; max-width: 100%;" src="../media/images/footer-logo.svg" alt="Espacio Contenido">
                 </div>
                 <div class="flex-2cell fd-column ai-flex-end jc-center">
-                    <a href="contact.html">
+                    <a href="/pages/contact.html">
                         <div class="button bg-s1-color">Contacto</div>
                     </a>
                     <ul>
-                        <h1>¡Seguinos en nuestras redes!</h1>
+                        <h2>¡Seguinos en nuestras redes!</h2>
                         <li>
                             <a href="https://www.facebook.com/Espacio-Contenido-590339944993691" target="_blank">
                             <i class="fa fa-facebook-square"></i> Facebook</a>
