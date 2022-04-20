@@ -349,8 +349,16 @@ body {
 .button-precios {
     color: white;
 }
+.button-precios:hover {
+    transition: all .7s;
+    transform: scale(1.2);
+}
 .button-servicios {
     color: #202020;
+}
+.button-servicios:hover {
+    transition: all .7s;
+    transform: scale(1.2);
 }
 
 .paragraph-text a{
