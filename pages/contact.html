@@ -14,17 +14,16 @@
     <!-- Header -->
     <header class="header">
         <nav class="menu bg-p1-color">
-            <div class="menu-mobile">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbutton"><i class="fa fa-bars"></i></label>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="about.html">Sobre nosotras</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="prices.html">Precios</a></li>
-                    <li class="active"><a href="contact.html">Contacto</a></li>
-                </ul>
-            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton" id="open"><i class="fa fa-bars"></i></label>
+            <label for="check" class="checkbutton" id="close"><i class="fa fa-times"></i></label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotras</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="prices.html">Precios</a></li>
+                <li class="active"><a href="contact.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -33,7 +32,7 @@
         <!-- Banner -->
         <div class="banner bg-s1-color">
             <img src="../media/images/banner-contact.jpg" alt="Contacto">
-            <div class="banner-flex">
+            <div class="banner-text">
                 <h1>Contacto</h1>
                 <div class="line-h"></div>
             </div>
@@ -47,14 +46,14 @@
                 </div>
                 <div class="flex-2cell ai-center jc-center">
                     <form class="contact-form bg-s1-color fd-column jc-space-between">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre *" required>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido *" required>
                         <input type="text" name="telefono" id="telefono" placeholder="Telefono">
-                        <input type="text" name="email" id="email" placeholder="E-mail" required>
+                        <input type="text" name="email" id="email" placeholder="E-mail *" required>
                         <!--<input type="checkbox" name="promo" id="promo" checked="true">
                         <label for="promo">Deseo recibir promociones por e-mail</label>-->
-                        <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje" required>
-                        <input class="button" type="submit" id="submit" value="Enviar">
+                        <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje *" required>
+                        <input type="submit" id="submit" value="Enviar" class="button">
                     </form>
                 </div>
                 <!--

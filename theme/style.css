@@ -12,6 +12,7 @@ color: #80CED7;
     margin: 0;
     padding: 0;
     height: auto;
+    transition: .5s;
 }
 
 html, body {
@@ -29,6 +30,7 @@ html, body {
 
 .header {
     grid-area: header;
+    width: 100%;
 }
 
 .navbar {
@@ -436,7 +438,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .banner img{
@@ -446,10 +448,9 @@ body {
     object-fit: cover;
 }
 
-.banner-flex{
+.banner-text{
     display: flex;
     position: absolute;
-    height: 60vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -464,7 +465,7 @@ body {
     width: 50%;
 }
 
-.about-1 {
+.about-intro {
     font-size: 1.9em;
     text-align: center;
 }
@@ -489,7 +490,8 @@ body {
     color: white;
     width: 100%;
     padding: 7px;
-    font-size: 1em;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 ::placeholder {
@@ -506,6 +508,7 @@ body {
 
 .contact-form .button {
     background-color: #E97156;
+    border-radius: 7px;
     border: none;
     width: 50%;
     margin: auto;
@@ -514,16 +517,37 @@ body {
     font-weight: 500;
 }
 
+.button:hover {
+    transform: scale(1.1);
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+    .contact-form {
+        width: 90%;
+        height: 100%;
+        font-size: .8em;
+    }
+
+    .contact-form .button {
+        width: 50%;
+        height: 30px;
+    }
+}
+
 
 /* MOBILE */
 
 @media (max-width: 640px) {
-    .menu-mobile {
+    #close {
+        display: none;
+    }
+
+    .menu {
         position: relative;
-        width: 100%;
         background-color: #E97156;
         height: 80px;
-        z-index: 5;
+        z-index: 3;
     }
 
     .menu li {
@@ -540,7 +564,7 @@ body {
         width: 100%;
         left: -100%;
         text-align: center;
-        transition: all 0.7s;
+        transition: .7s;
         background: #202020f3;
     }
 
@@ -557,6 +581,14 @@ body {
 
     #check:checked ~ ul{
         left: 0;
+    }
+
+    #check:checked ~ #close {
+        display: block;
+    }
+
+    #check:checked ~ #open {
+        display: none;
     }
 
     .flex-container {
