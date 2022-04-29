@@ -189,6 +189,11 @@ body {
     transition: 0.7s;
     background-color: #202020;
 }
+
+.btn-dark {
+    background-color: #3E4F56;
+    border-color: #3E4F56;;
+}
 /* End Footer */
 
 .section {
