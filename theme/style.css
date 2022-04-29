@@ -515,10 +515,6 @@ body {
     flex: 0;
 }
 
-.card-title {
-    font-size: 4em;
-}
-
 /* TABLET */
 @media (max-width: 800px) {
     .contact-form {
