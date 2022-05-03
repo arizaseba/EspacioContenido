@@ -56,40 +56,62 @@
         </div>
       </div>
 
-
-        <div class="section-small bg-s3-color">
-            <div class="flex-container">
-                <div class="flex-2cell ai-center jc-center">
-                    <img style="max-width: 100%; max-height: 50%;" src="../media/images/hola.png" alt="">
-                </div>
-                <div class="flex-2cell ai-center jc-center">
-                    <form class="contact-form bg-s1-color fd-column jc-space-between">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre *" required>
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido *" required>
-                        <input type="text" name="telefono" id="telefono" placeholder="Telefono">
-                        <input type="text" name="email" id="email" placeholder="E-mail *" required>
-                        <!--<input type="checkbox" name="promo" id="promo" checked="true">
-                        <label for="promo">Deseo recibir promociones por e-mail</label>-->
-                        <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje *" required>
-                        <input type="submit" id="submit" value="Enviar" class="button">
-                    </form>
-                </div>
-                <!--
-                <h3>Nos encontramos en Paraná - Entre Ríos</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54285.631851838494!2d-60.54998246895893!3d-31.747240722015007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1648064356014!5m2!1ses-419!2sar" width="450" height="450" allowfullscreen="" loading="lazy"></iframe>    
-                -->
+      <div id="contact-form">
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9596.494774009889!2d-60.50991946091961!3d-31.746660088230847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1651610819827!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+              <img class="img-fluid w-50" src="../media/images/hola.png" alt="">
             </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+              <form class="row g-3">
+                <div class="col-md-6 m-0">
+                  <label for="inputNombre" class="form-label">Nombre *</label>
+                  <input type="nombre" class="form-control" id="inputNombre" required>
+                </div>
+                <div class="col-md-6 m-md-0">
+                  <label for="inputApellido" class="form-label">Apellido *</label>
+                  <input type="apellido" class="form-control" id="inputApellido" required>
+                </div>
+                <div class="col-12 ">
+                  <label for="inputAddress2" class="form-label">Teléfono</label>
+                  <input type="text" class="form-control" id="inputAddress2">
+                </div>
+                <div class="col-12">
+                  <label for="inputEmail" class="form-label">E-mail *</label>
+                  <input type="text" class="form-control" id="inputEmail" required>
+                </div>
+                <div class="col-12">
+                  <label for="" class="form-label">Plan <span class="text-muted">(opcional)</span></label>
+                  <select class="form-select" aria-label="Seleccionar plan">
+                    <option selected>Seleccionar...</option>
+                    <option value="1">Basico</option>
+                    <option value="2">Normal</option>
+                    <option value="3">Intensivo</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="inputMsg" class="form-label">Mensaje *</label>
+                  <textarea type="text" class="form-control" id="inputMsg" rows="3" placeholder="Escribe un mensaje" required></textarea>
+                </div>
+                <div class="col-12 mt-4 text-center">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     
     <!-- Footer -->
     <footer class="footer bg-p1-color">
-        <div class="container-fluid p-5">
-            <div class="row m-sm-5">
-               <div class="col-sm d-flex justify-content-center align-items-center">
+        <div class="container p-5">
+            <div class="row">
+               <div class="col-md-4 d-flex justify-content-center align-items-center">
                    <img class="img-fluid w-50" src="../media/images/footer-logo.svg" alt="Espacio Contenido">
                </div>
-               <div class="col-sm-8 d-flex flex-column justify-content-center align-items-right">
+               <div class="col-md-8 d-flex flex-column justify-content-center align-items-right">
                    <div class="d-flex justify-content-center justify-content-md-end mt-5">
                        <a href="contact.html"><button class="btn btn-dark btn-lg" type="button">Contacto</button></a>
                    </div>
