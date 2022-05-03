@@ -644,3 +644,143 @@ body {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+#lista_precios {
+    padding: 3rem 0;
+    background-color: #F4EDED;
+    cursor: default;
+}
+  
+#lista_precios .head_bg{
+    border-color: #3E4F56 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #3E4F56;
+}
+  
+#lista_precios .head span{
+    cursor: default;
+    color: white;
+}
+
+#lista_precios .sign{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+#lista_precios .currency{
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#lista_precios .cent{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+#lista_precios .month{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+}
+
+#lista_precios .item_list ul li{
+    color: #202020;
+}
+
+#lista_precios .item_list ul li i{
+    color: #1ABC9C;
+}
+
+#lista_precios .item_list ul li:hover{
+    background-color: #DEE2E6;
+    border-left: 5px solid #E97156;
+}
+  
+#lista_precios .precio_btn a{
+    border: 1px solid #E97156; 
+    color: #E97156;
+} 
+  
+#lista_precios .precio_contenido:hover .head_bg, #lista_precios .precio_contenido.active .head_bg {
+    border-color: #E97156 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #E97156;
+}
+  
+#lista_precios .precio_contenido:hover .precio_btn a, #lista_precios .precio_contenido.active .precio_btn a{
+    background-color: #E97156;
+    color: white;
+} 
+
+.row .table{
+    padding: 28px 0;
+}
+
+#lista_precios .precio_head_contenedor {
+    background-color: #DEE2E6;
+    margin: 0 0 20px 0;
+}
+  
+#lista_precios .precio_contenido .precio_head_contenedor .precio_head{
+    margin: 0 0 50px 0;
+}
+  
+#lista_precios .head_bg{
+    border-style: solid;
+    border-width: 90px 1411px 23px 399px;
+}
+  
+#lista_precios .head{
+    padding-top: 40px;
+}
+  
+#lista_precios .head span{
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+  
+#lista_precios .precio_total{
+    padding: 0 0 20px;
+}
+  
+#lista_precios .item_list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#lista_precios .item_list ul li{
+    padding: 15px 0;
+    transition: all .3s;
+}
+
+#lista_precios .item_list ul li .fa{
+    padding: 0 10px;
+}
+
+#lista_precios .precio_btn{
+    margin: 20px 0 32px;
+}
+
+#lista_precios .precio_btn a{
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 30px;
+}
+  
+#lista_precios .head_bg, .precio_btn a{
+    transition: all .5s;
+}
