@@ -1,11 +1,9 @@
-#theme{
-    color: #F4EDED;
-    color: #202020;
-    color: #3E4F56;
-    color: #E97156;
-    color: #F9DB6D;
-    color: #80CED7;
-    }
+    $color-bg-white: #F4EDED;
+    $color-dark: #202020;
+    $color-secondary: #3E4F56;
+    $color-primary: #E97156;
+    $color: #F9DB6D;
+    $color: #80CED7;
     
     * {
         box-sizing: border-box;
@@ -71,7 +69,7 @@
         border-radius: 50%;
         right: 1em;
         bottom: 1em;
-        box-shadow: #202020 0 0 10px;
+        box-shadow: $color-dark 0 0 10px;
     }
     
     .wsp-button a{
@@ -80,7 +78,7 @@
     }
     
     .bg-p1-color {
-        background-color: #E97156;
+        background-color: $color-primary;
         color: white;
     }
     
@@ -89,44 +87,45 @@
     }
     
     .bg-s1-color {
-        background-color: #3E4F56;
+        background-color: $color-secondary;
         color: white;
     }
     
     .bg-s2-color {
-        background-color: #202020;
+        background-color: $color-dark;
         color: white;
     }
     
     .bg-s3-color {
-        background-color: #F4EDED;
-        color: #202020;
+        background-color: $color-bg-white;
+        color: $color-dark;
     }
     
     body {
         margin: 0;
         font-family: 'Open Sans', 'Roboto', 'sans-serif';
-        color: #202020;
+        color: $color-dark;
     }
     
     /* Header */
     .navbar {
-        box-shadow: #202020 0px 0px 10px;
+        box-shadow: $color-dark 0px 0px 10px;
     }
-    
+
     .navbar-nav {
-        margin: auto;
+        margin: auto;        
     }
     
     .nav-link {
-        color: #3E4F56 !important;
+        width: fit-content;
+        color: $color-secondary !important;
     }
     
     .nav-item {
         padding: 5px 10px;
     }
     
-    .navbar-light .navbar-toggler {
+    .navbar-toggler {
         border: 0;
     }
     
@@ -136,9 +135,9 @@
     
     .nav-link.active {
         font-weight: 500;
-        border-bottom: solid #3E4F56;
-        color: #3E4F56 !important;
-    }
+        border-bottom: solid $color-secondary;
+        color: $color-secondary !important;
+    }    
     /* End Header */
     
     /* Footer */
@@ -166,13 +165,13 @@
     }
     
     .footer a:hover {
-        transition: 0.7s;
-        color: #3E4F56;
+        transition: .7s;
+        color: $color-secondary;
     }
     
     .footer-copy {
         font-size: 15px;
-        background-color: #3E4F56;
+        background-color: $color-secondary;
         text-align: center;
         color: white;
         padding: 0.8em;
@@ -183,16 +182,16 @@
     }
     
     .btn:hover{
-        transition: 0.7s;
+        transition: .7s;
     }
     
     .btn-dark:hover{
-        background-color: #202020;
+        background-color: $color-dark;
     }
     
     .btn-dark {
-        background-color: #3E4F56;
-        border-color: #3E4F56;;
+        background-color: $color-secondary;
+        border-color: $color-secondary;;
     }
     /* End Footer */
     
@@ -200,7 +199,7 @@
     .line-h {
         width: 100px;
         height: 10px;
-        background-color: #E97156;
+        background-color: $color-primary;
         margin: 10px 0;
     }
     
@@ -213,12 +212,12 @@
         color: white;
     }
     .button-servicios {
-        color: #202020;
+        color: $color-dark;
     }
     .button-servicios:hover {
         transition: all .7s;
         transform: scale(1.2);
-        color: #202020;
+        color: $color-dark;
     }
     
     .cardAnimation:hover {
@@ -227,12 +226,12 @@
     }
     
     .imgBorder {
-        border: #E97156 solid 0.5rem;
+        border: $color-primary solid 0.5rem;
     }
     
     .banner {
-        background: #3E4F56;
-        background: linear-gradient(0deg, #3E4F56 0%, #202020 100%);
+        background: $color-secondary;
+        background: linear-gradient(0deg, $color-secondary 0%, $color-dark 100%);
         height: 60vh;
     }
     
@@ -263,7 +262,7 @@
     }
     
     .contact-form input {
-        background-color: #3E4F56;
+        background-color: $color-secondary;
         border: none;
         border-bottom: white 2px solid;
         text-decoration: none;
@@ -287,7 +286,7 @@
     }
     
     .contact-form .button {
-        background-color: #E97156;
+        background-color: $color-primary;
         border-radius: 7px;
         border: none;
         width: 50%;
@@ -332,93 +331,6 @@
     /* MOBILE */
     
     @media (max-width: 767px) {
-        #close {
-            display: none;
-        }
-    
-        .menu {
-            position: relative;
-            background-color: #E97156;
-            height: 80px;
-            z-index: 3;
-        }
-    
-        .menu li {
-            display: block;
-        }
-    
-        .menu .checkbutton {
-            display: block;
-        }
-    
-        .menu ul {
-            padding: 15px 0;
-            position: relative;
-            width: 100%;
-            left: -100%;
-            text-align: center;
-            transition: .7s;
-            background: #202020f3;
-        }
-    
-        .active a {
-            font-weight: 500;
-            padding-bottom: 3px;
-            border-bottom: solid #E97156;
-            color: #E97156;
-        }
-    
-        .menu a:hover {
-            color: #E97156;
-        }
-    
-        #check:checked ~ ul{
-            left: 0;
-        }
-    
-        #check:checked ~ #close {
-            display: block;
-        }
-    
-        #check:checked ~ #open {
-            display: none;
-        }
-    
-        .flex-container {
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    
-        .flex-2cell img {
-            width: 70%;
-        }
-    
-        .flex-2cell {
-            width: 100%;
-            flex-direction: column;
-        }
-    
-        .imgLeftCell {
-            width: 100%;
-        }
-    
-        .imgLeftCell img{
-            width: 80%;
-        }
-    
-        .imgCenterCell{
-            width: 100%;
-            margin: 50px 0;
-        }
-    
-        .imgRightCell {
-            width: 100%;
-        }
-    
-        .imgRightCell img{
-            width: 80%;
-        }
-    
         .footer ul, .footer li{
             text-align: center;
             display: block;
@@ -437,28 +349,27 @@
     
     
     
-    #lista_precios {
-        padding: 3rem 0;
+    #prices-container {
+        padding: 7rem 1rem;
         cursor: default;
     }
       
-    #lista_precios .head_bg{
-        border-color: #3E4F56 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #3E4F56;
+    #prices-container .head_bg{
+        border-color: $color-secondary rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $color-secondary;
     }
       
-    #lista_precios .head span{
-        cursor: default;
+    #prices-container .head span{
         color: white;
     }
     
-    #lista_precios .sign{
+    #prices-container .sign{
         display: inline-block;
         font-size: 28px;
         font-weight: 400;
         vertical-align: middle;
     }
     
-    #lista_precios .currency{
+    #prices-container .currency{
         font-size: 60px;
         font-weight: 300;
         letter-spacing: -2px;
@@ -467,44 +378,44 @@
         vertical-align: middle;
     }
     
-    #lista_precios .cent{
+    #prices-container .cent{
         display: inline-block;
         font-size: 24px;
         font-weight: 400;
         vertical-align: bottom;
     }
     
-    #lista_precios .month{
+    #prices-container .month{
         font-size: 18px;
         font-weight: 400;
         letter-spacing: 3px;
         vertical-align: bottom;
     }
     
-    #lista_precios .item_list ul li{
-        color: #202020;
+    #prices-container .item_list ul li{
+        color: $color-dark;
     }
     
-    #lista_precios .item_list ul li i{
+    #prices-container .item_list ul li i{
         color: #1ABC9C;
     }
     
-    #lista_precios .item_list ul li:hover{
+    #prices-container .item_list ul li:hover{
         background-color: #DEE2E6;
-        border-left: 5px solid #E97156;
+        border-left: 5px solid $color-primary;
     }
       
-    #lista_precios .precio_btn a{
-        border: 1px solid #E97156; 
-        color: #E97156;
+    #prices-container .precio_btn a{
+        border: 1px solid $color-primary; 
+        color: $color-primary;
     } 
       
-    #lista_precios .precio_contenido:hover .head_bg, #lista_precios .precio_contenido.active .head_bg {
-        border-color: #E97156 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #E97156;
+    #prices-container .precio_contenido:hover .head_bg, #prices-container .precio_contenido.active .head_bg {
+        border-color: $color-primary rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $color-primary;
     }
       
-    #lista_precios .precio_contenido:hover .precio_btn a, #lista_precios .precio_contenido.active .precio_btn a{
-        background-color: #E97156;
+    #prices-container .precio_contenido:hover .precio_btn a, #prices-container .precio_contenido.active .precio_btn a{
+        background-color: $color-primary;
         color: white;
     } 
     
@@ -512,100 +423,96 @@
         padding: 28px 0;
     }
     
-    #lista_precios .precio_head_contenedor {
+    #prices-container .precio_head_contenedor {
         background-color: #DEE2E6;
         margin: 0 0 20px 0;
     }
       
-    #lista_precios .precio_contenido .precio_head_contenedor .precio_head{
+    #prices-container .precio_contenido .precio_head_contenedor .precio_head{
         margin: 0 0 50px 0;
     }
       
-    #lista_precios .head_bg{
+    #prices-container .head_bg{
         border-style: solid;
         border-width: 90px 1411px 23px 399px;
     }
       
-    #lista_precios .head{
+    #prices-container .head{
         padding-top: 40px;
     }
       
-    #lista_precios .head span{
+    #prices-container .head span{
         font-size: 28px;
         font-weight: 400;
         letter-spacing: 2px;
     }
       
-    #lista_precios .precio_total{
+    #prices-container .precio_total{
         padding: 0 0 20px;
     }
       
-    #lista_precios .item_list ul{
+    #prices-container .item_list ul{
         list-style: none;
         padding: 0;
         margin: 0;
     }
       
-    #lista_precios .item_list ul li{
+    #prices-container .item_list ul li{
         padding: 15px 0;
         transition: all .3s;
     }
     
-    #lista_precios .item_list ul li .fa{
+    #prices-container .item_list ul li .fa{
         padding: 0 10px;
     }
     
-    #lista_precios .precio_btn{
+    #prices-container .precio_btn{
         margin: 20px 0 32px;
     }
     
-    #lista_precios .precio_btn a{
+    #prices-container .precio_btn a{
         display: inline-block;
         font-size: 18px;
         padding: 12px 30px;
     }
       
-    #lista_precios .head_bg, .precio_btn a{
+    #prices-container .head_bg, .precio_btn a{
         transition: all .5s;
     }
     
-    
+    #services-container {
+        padding: 7rem 1rem;
+    }
     
     #contact-form {
         position: relative;
         padding: 7rem 1rem;
-        cursor: default;
         background: rgb(233,113,86);
         background: linear-gradient(45deg, rgba(233,113,86,1) 0%, rgba(128,206,215,1) 50%, rgba(62,79,86,1) 100%);
     }
     
     #contact-form form {
         padding: 2em;
-        background-color: #202020;
+        background-color: $color-dark;
         color: white;
         border-radius: 20px;
     }
-    
-    #contact-form .col, .row, img {
-        z-index: 1;
-    }
-    
+
     .google-map {
         height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 0;
-        opacity: .2;
+        opacity: .25;
     }
     
     .btn-primary {
-        background-color: #E97156;
-        border-color: #E97156;;
+        background-color: $color-primary;
+        border-color: $color-primary;;
     }
     
     .btn-primary:hover {
-        background-color: #E97156;
-        border-color: #E97156;;
+        background-color: $color-primary;
+        border-color: $color-primary;;
     }

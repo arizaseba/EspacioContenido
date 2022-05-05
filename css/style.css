@@ -1,11 +1,3 @@
-#theme {
-  color: #F4EDED;
-  color: #202020;
-  color: #3E4F56;
-  color: #E97156;
-  color: #F9DB6D;
-  color: #80CED7; }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -93,12 +85,13 @@ body {
   margin: auto; }
 
 .nav-link {
+  width: fit-content;
   color: #3E4F56 !important; }
 
 .nav-item {
   padding: 5px 10px; }
 
-.navbar-light .navbar-toggler {
+.navbar-toggler {
   border: 0; }
 
 .navbar-toggler:focus {
@@ -131,7 +124,7 @@ body {
   color: white; }
 
 .footer a:hover {
-  transition: 0.7s;
+  transition: .7s;
   color: #3E4F56; }
 
 .footer-copy {
@@ -145,7 +138,7 @@ body {
   padding: 10px 40px; }
 
 .btn:hover {
-  transition: 0.7s; }
+  transition: .7s; }
 
 .btn-dark:hover {
   background-color: #202020; }
@@ -266,57 +259,6 @@ body {
 
 /* MOBILE */
 @media (max-width: 767px) {
-  #close {
-    display: none; }
-  .menu {
-    position: relative;
-    background-color: #E97156;
-    height: 80px;
-    z-index: 3; }
-  .menu li {
-    display: block; }
-  .menu .checkbutton {
-    display: block; }
-  .menu ul {
-    padding: 15px 0;
-    position: relative;
-    width: 100%;
-    left: -100%;
-    text-align: center;
-    transition: .7s;
-    background: #202020f3; }
-  .active a {
-    font-weight: 500;
-    padding-bottom: 3px;
-    border-bottom: solid #E97156;
-    color: #E97156; }
-  .menu a:hover {
-    color: #E97156; }
-  #check:checked ~ ul {
-    left: 0; }
-  #check:checked ~ #close {
-    display: block; }
-  #check:checked ~ #open {
-    display: none; }
-  .flex-container {
-    flex-direction: column;
-    justify-content: space-between; }
-  .flex-2cell img {
-    width: 70%; }
-  .flex-2cell {
-    width: 100%;
-    flex-direction: column; }
-  .imgLeftCell {
-    width: 100%; }
-  .imgLeftCell img {
-    width: 80%; }
-  .imgCenterCell {
-    width: 100%;
-    margin: 50px 0; }
-  .imgRightCell {
-    width: 100%; }
-  .imgRightCell img {
-    width: 80%; }
   .footer ul, .footer li {
     text-align: center;
     display: block;
@@ -324,24 +266,23 @@ body {
   .banner h1 {
     font-size: 2.5em; } }
 
-#lista_precios {
-  padding: 3rem 0;
+#prices-container {
+  padding: 7rem 1rem;
   cursor: default; }
 
-#lista_precios .head_bg {
+#prices-container .head_bg {
   border-color: #3E4F56 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #3E4F56; }
 
-#lista_precios .head span {
-  cursor: default;
+#prices-container .head span {
   color: white; }
 
-#lista_precios .sign {
+#prices-container .sign {
   display: inline-block;
   font-size: 28px;
   font-weight: 400;
   vertical-align: middle; }
 
-#lista_precios .currency {
+#prices-container .currency {
   font-size: 60px;
   font-weight: 300;
   letter-spacing: -2px;
@@ -349,91 +290,93 @@ body {
   padding: 0;
   vertical-align: middle; }
 
-#lista_precios .cent {
+#prices-container .cent {
   display: inline-block;
   font-size: 24px;
   font-weight: 400;
   vertical-align: bottom; }
 
-#lista_precios .month {
+#prices-container .month {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 3px;
   vertical-align: bottom; }
 
-#lista_precios .item_list ul li {
+#prices-container .item_list ul li {
   color: #202020; }
 
-#lista_precios .item_list ul li i {
+#prices-container .item_list ul li i {
   color: #1ABC9C; }
 
-#lista_precios .item_list ul li:hover {
+#prices-container .item_list ul li:hover {
   background-color: #DEE2E6;
   border-left: 5px solid #E97156; }
 
-#lista_precios .precio_btn a {
+#prices-container .precio_btn a {
   border: 1px solid #E97156;
   color: #E97156; }
 
-#lista_precios .precio_contenido:hover .head_bg, #lista_precios .precio_contenido.active .head_bg {
+#prices-container .precio_contenido:hover .head_bg, #prices-container .precio_contenido.active .head_bg {
   border-color: #E97156 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #E97156; }
 
-#lista_precios .precio_contenido:hover .precio_btn a, #lista_precios .precio_contenido.active .precio_btn a {
+#prices-container .precio_contenido:hover .precio_btn a, #prices-container .precio_contenido.active .precio_btn a {
   background-color: #E97156;
   color: white; }
 
 .row .table {
   padding: 28px 0; }
 
-#lista_precios .precio_head_contenedor {
+#prices-container .precio_head_contenedor {
   background-color: #DEE2E6;
   margin: 0 0 20px 0; }
 
-#lista_precios .precio_contenido .precio_head_contenedor .precio_head {
+#prices-container .precio_contenido .precio_head_contenedor .precio_head {
   margin: 0 0 50px 0; }
 
-#lista_precios .head_bg {
+#prices-container .head_bg {
   border-style: solid;
   border-width: 90px 1411px 23px 399px; }
 
-#lista_precios .head {
+#prices-container .head {
   padding-top: 40px; }
 
-#lista_precios .head span {
+#prices-container .head span {
   font-size: 28px;
   font-weight: 400;
   letter-spacing: 2px; }
 
-#lista_precios .precio_total {
+#prices-container .precio_total {
   padding: 0 0 20px; }
 
-#lista_precios .item_list ul {
+#prices-container .item_list ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-#lista_precios .item_list ul li {
+#prices-container .item_list ul li {
   padding: 15px 0;
   transition: all .3s; }
 
-#lista_precios .item_list ul li .fa {
+#prices-container .item_list ul li .fa {
   padding: 0 10px; }
 
-#lista_precios .precio_btn {
+#prices-container .precio_btn {
   margin: 20px 0 32px; }
 
-#lista_precios .precio_btn a {
+#prices-container .precio_btn a {
   display: inline-block;
   font-size: 18px;
   padding: 12px 30px; }
 
-#lista_precios .head_bg, .precio_btn a {
+#prices-container .head_bg, .precio_btn a {
   transition: all .5s; }
+
+#services-container {
+  padding: 7rem 1rem; }
 
 #contact-form {
   position: relative;
   padding: 7rem 1rem;
-  cursor: default;
   background: #e97156;
   background: linear-gradient(45deg, #e97156 0%, #80ced7 50%, #3e4f56 100%); }
 
@@ -443,17 +386,13 @@ body {
   color: white;
   border-radius: 20px; }
 
-#contact-form .col, .row, img {
-  z-index: 1; }
-
 .google-map {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
-  opacity: .2; }
+  opacity: .25; }
 
 .btn-primary {
   background-color: #E97156;
