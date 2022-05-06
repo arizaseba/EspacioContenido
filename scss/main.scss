@@ -137,7 +137,7 @@
         font-weight: 500;
         border-bottom: solid $color-secondary;
         color: $color-secondary !important;
-    }    
+    }
     /* End Header */
     
     /* Footer */
@@ -156,7 +156,7 @@
     
     .footer li {
         display: inline;
-        margin: 0 15px;
+        margin-left: 1.5rem !important;
     }
     
     .footer a {
@@ -192,6 +192,10 @@
     .btn-dark {
         background-color: $color-secondary;
         border-color: $color-secondary;;
+    }
+
+    .btn-dark a:hover{
+        color: white !important;
     }
     /* End Footer */
     
@@ -334,7 +338,6 @@
         .footer ul, .footer li{
             text-align: center;
             display: block;
-            line-height: 40px;
         }
     
         .banner h1 {
