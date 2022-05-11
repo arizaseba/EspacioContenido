@@ -1,5 +1,0 @@
-# Ignora la carpeta node_modules
-node_modules
-
-# Ignora archivos de configuración SASS
-.sass-cache
