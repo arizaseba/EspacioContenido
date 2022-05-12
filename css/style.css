@@ -178,10 +178,8 @@ body {
     font-size: 1.5em;
     padding: 0; }
   .footer li {
-    display: inline;
-    margin-left: 1.5rem !important; }
+    display: inline; }
   .footer a {
-    font-weight: 300;
     color: white; }
   .footer a:hover {
     transition: .7s;
@@ -216,15 +214,6 @@ body {
 
 .card-body {
   flex: 0; }
-
-/* MOBILE */
-@media (max-width: 767px) {
-  .footer ul,
-  .footer li {
-    text-align: center;
-    display: block; }
-  .banner h1 {
-    font-size: 2.5em; } }
 
 #prices-container {
   padding: 7rem 1rem;

@@ -80,11 +80,9 @@ body {
 
 	li {
 		display: inline;
-		margin-left: 1.5rem !important;
 	}
 
 	a {
-		font-weight: 300;
 		color: white;
 	}
 
@@ -130,19 +128,6 @@ body {
 
 .card-body {
 	flex: 0;
-}
-
-/* MOBILE */
-@media (max-width: 767px) {
-	.footer ul,
-	.footer li {
-		text-align: center;
-		display: block;
-	}
-
-	.banner h1 {
-		font-size: 2.5em;
-	}
 }
 
 #prices-container {
