@@ -1,0 +1,12 @@
+.banner {
+    background: map-get($theme, color-secondary);
+    background: linear-gradient(0deg, map-get($theme, color-secondary) 0%, map-get($theme, color-dark) 100%);
+    height: 60vh;
+    img {
+        object-fit: cover;
+   }
+    .line-h {
+        height: 15px;
+        width: 50%;
+   }
+}

@@ -1,0 +1,83 @@
+.navbar {
+	grid-area: navbar;
+	box-shadow: map-get($theme, color-dark) 0px 0px 10px;
+
+	.navbar-nav {
+		margin: auto;
+	}
+
+	.nav-link {
+		width: fit-content;
+		color: map-get($theme, color-secondary)  !important;
+	}
+
+	.nav-item {
+		padding: 5px 10px;
+	}
+
+	.navbar-toggler {
+        border: 0;
+        width: 25px;
+        height: 32px;
+        position: relative;
+        transition: .5s ease-in-out;
+
+        .toggler-icon {
+            display: block;
+            position: absolute;
+            height: 3px;
+            border-radius: 3px;
+            width: 100%;
+            background: map-get($theme, color-secondary);
+            left: -5px;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+        .top-bar {
+            top: inherit;
+            transform: rotate(135deg);
+        }
+        .middle-bar {
+            margin-top: 0px;
+            opacity: 0;
+            top: inherit;
+            filter: alpha(opacity=0);
+        }
+        .bottom-bar {
+            top: inherit;
+            transform: rotate(-135deg);
+        }
+        &.collapsed {
+            .top-bar {
+                position: absolute;
+                top: 5px;
+                transform: rotate(0deg);
+            }
+            .middle-bar {
+                opacity: 1;
+                position: absolute;
+                top: 15px;
+                filter: alpha(opacity=100);
+            }
+            .bottom-bar {
+                position: absolute;
+                top: 25px;
+                transform: rotate(0deg);
+            }
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+	.nav-link.active {
+		font-weight: 500;
+		border-bottom: solid map-get($theme, color-secondary);
+		color: map-get($theme, color-secondary)  !important;
+	}
+}
+
+
+
+
+

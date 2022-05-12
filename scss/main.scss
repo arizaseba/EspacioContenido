@@ -1,0 +1,307 @@
+@import '_variables.scss', '_buttons.scss', '_banners.scss', '_navbar.scss';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	z-index: 1;
+}
+
+html, body {
+	height: 100%;
+}
+
+.grid-container {
+	display: grid;
+	grid-template: "header" "navbar" "main" "footer";
+}
+
+.header {
+	grid-area: header;
+	width: 100%;
+}
+
+.main {
+	grid-area: main;
+}
+
+p {
+	z-index: 1;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.bg-p1-color {
+	background-color: map-get($theme, color-primary);
+	color: white;
+}
+
+.bg-p2-color {
+	background-color: map-get($theme, color-yellow);
+}
+
+.bg-s1-color {
+	background-color: map-get($theme, color-secondary);
+	color: white;
+}
+
+.bg-s2-color {
+	background-color: map-get($theme, color-dark);
+	color: white;
+}
+
+.bg-s3-color {
+	background-color: map-get($theme, color-bg-white);
+	color: map-get($theme, color-dark);
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', 'Roboto', 'sans-serif';
+	color: map-get($theme, color-dark);
+}
+
+/* Footer */
+.footer {
+	grid-area: footer;
+
+	ul {
+		text-align: right;
+		list-style-type: none;
+		overflow: hidden;
+		margin-top: 25px;
+		font-size: 1.5em;
+		padding: 0;
+	}
+
+	li {
+		display: inline;
+		margin-left: 1.5rem !important;
+	}
+
+	a {
+		font-weight: 300;
+		color: white;
+	}
+
+	a:hover {
+		transition: .7s;
+		color: map-get($theme, color-secondary);
+	}
+
+	.footer-copy {
+		font-size: 15px;
+		background-color: map-get($theme, color-secondary);
+		text-align: center;
+		color: white;
+		padding: 0.8em;
+	}
+}
+
+/* End Footer */
+.line-h {
+	width: 100px;
+	height: 10px;
+	background-color: map-get($theme, color-primary);
+	margin: 10px 0;
+}
+
+.cardAnimation:hover {
+	transition: all .7s;
+	transform: scale(1.1);
+}
+
+.imgBorder {
+	border: map-get($theme, color-primary) solid 0.5rem;
+}
+
+.vh-80 {
+	height: 80vh;
+}
+
+.card {
+	background-color: transparent;
+	border: 0;
+}
+
+.card-body {
+	flex: 0;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+	.footer ul,
+	.footer li {
+		text-align: center;
+		display: block;
+	}
+
+	.banner h1 {
+		font-size: 2.5em;
+	}
+}
+
+#prices-container {
+	padding: 7rem 1rem;
+	cursor: default;
+
+	.head_bg {
+		border-color: map-get($theme, color-secondary) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) map-get($theme, color-secondary);
+	}
+
+	.head span {
+		color: white;
+	}
+
+	.sign {
+		display: inline-block;
+		font-size: 28px;
+		font-weight: 400;
+		vertical-align: middle;
+	}
+
+	.currency {
+		font-size: 60px;
+		font-weight: 300;
+		letter-spacing: -2px;
+		line-height: 60px;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	.cent {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 400;
+		vertical-align: bottom;
+	}
+
+	.month {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 3px;
+		vertical-align: bottom;
+	}
+
+	.item_list ul li {
+		color: map-get($theme, color-dark);
+	}
+
+	.item_list ul li i {
+		color: #1ABC9C;
+	}
+
+	.item_list ul li:hover {
+		background-color: #DEE2E6;
+		border-left: 5px solid map-get($theme, color-primary);
+	}
+
+	.precio_btn a {
+		border: 1px solid map-get($theme, color-primary);
+		color: map-get($theme, color-primary);
+	}
+
+	.precio_contenido:hover .head_bg,
+	.precio_contenido.active .head_bg {
+		border-color: map-get($theme, color-primary) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) map-get($theme, color-primary);
+	}
+
+	.precio_contenido:hover .precio_btn a,
+	.precio_contenido.active .precio_btn a {
+		background-color: map-get($theme, color-primary);
+		color: white;
+	}
+
+	.precio_head_contenedor {
+		background-color: #DEE2E6;
+		margin: 0 0 20px 0;
+	}
+
+	.precio_contenido .precio_head_contenedor .precio_head {
+		margin: 0 0 50px 0;
+	}
+
+	.head_bg {
+		border-style: solid;
+		border-width: 90px 1411px 23px 399px;
+	}
+
+	.row .table {
+		padding: 28px 0;
+	}
+
+	.head {
+		padding-top: 40px;
+	}
+
+	.head span {
+		font-size: 28px;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	.precio_total {
+		padding: 0 0 20px;
+	}
+
+	.item_list ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.item_list ul li {
+		padding: 15px 0;
+		transition: all .3s;
+	}
+
+	.item_list ul li .fa {
+		padding: 0 10px;
+	}
+
+	.precio_btn {
+		margin: 20px 0 32px;
+	}
+
+	.precio_btn a {
+		display: inline-block;
+		font-size: 18px;
+		padding: 12px 30px;
+	}
+
+	.head_bg,
+	.precio_btn a {
+		transition: all .5s;
+	}
+}
+
+#services-container {
+	padding: 7rem 1rem;
+}
+
+#contact-form {
+	position: relative;
+	padding: 7rem 1rem;
+	background: rgb(233, 113, 86);
+	background: linear-gradient(45deg, rgba(233, 113, 86, 1) 0%, rgba(128, 206, 215, 1) 50%, rgba(62, 79, 86, 1) 100%);
+
+	.google-map {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: .25;
+	}
+
+	form {
+		padding: 2em;
+		background-color: map-get($theme, color-dark);
+		color: white;
+		border-radius: 20px;
+	}
+}
