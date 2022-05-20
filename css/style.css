@@ -70,7 +70,8 @@
 
 .navbar {
   grid-area: navbar;
-  box-shadow: #202020 0px 0px 10px; }
+  box-shadow: #202020 0px 0px 10px;
+  z-index: 1; }
   .navbar .navbar-nav {
     margin: auto; }
   .navbar .nav-link {
