@@ -1,20 +1,17 @@
 .navbar {
 	grid-area: navbar;
 	box-shadow: map-get($theme, color-dark) 0px 0px 10px;
-
+    z-index: 1;
 	.navbar-nav {
 		margin: auto;
 	}
-
 	.nav-link {
 		width: fit-content;
 		color: map-get($theme, color-secondary)  !important;
 	}
-
 	.nav-item {
 		padding: 5px 10px;
 	}
-
 	.navbar-toggler {
         border: 0;
         width: 25px;
@@ -69,7 +66,6 @@
             box-shadow: none;
         }
     }
-
 	.nav-link.active {
 		font-weight: 500;
 		border-bottom: solid map-get($theme, color-secondary);
