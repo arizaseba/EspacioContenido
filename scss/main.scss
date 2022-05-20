@@ -5,7 +5,6 @@
 	margin: 0;
 	padding: 0;
 	height: auto;
-	z-index: 1;
 }
 
 html, body {
@@ -27,7 +26,6 @@ html, body {
 }
 
 p {
-	z-index: 1;
 	margin: 0;
 }
 
@@ -108,11 +106,6 @@ body {
 	margin: 10px 0;
 }
 
-.cardAnimation:hover {
-	transition: all .7s;
-	transform: scale(1.1);
-}
-
 .imgBorder {
 	border: map-get($theme, color-primary) solid 0.5rem;
 }
@@ -124,10 +117,6 @@ body {
 .card {
 	background-color: transparent;
 	border: 0;
-}
-
-.card-body {
-	flex: 0;
 }
 
 #prices-container {
@@ -258,14 +247,27 @@ body {
 		padding: 12px 30px;
 	}
 
-	.head_bg,
-	.precio_btn a {
+	.head_bg, .precio_btn a {
 		transition: all .5s;
 	}
 }
 
 #services-container {
+	background-color: map-get($theme, color-bg-white);
 	padding: 7rem 1rem;
+	.card {
+		background-color: white;
+	}
+}
+
+#index-container2 {
+	padding: 7rem 1rem;
+	h4.fw-bold {
+		margin: 40px 35px 0 0;
+	}
+	h4.fw-light {
+		margin: 0 0 40px 35px;
+	}
 }
 
 #contact-form {
@@ -273,7 +275,6 @@ body {
 	padding: 7rem 1rem;
 	background: rgb(233, 113, 86);
 	background: linear-gradient(45deg, rgba(233, 113, 86, 1) 0%, rgba(128, 206, 215, 1) 50%, rgba(62, 79, 86, 1) 100%);
-
 	.google-map {
 		height: 100%;
 		width: 100%;
@@ -282,11 +283,89 @@ body {
 		left: 0;
 		opacity: .25;
 	}
-
 	form {
 		padding: 2em;
-		background-color: map-get($theme, color-dark);
+		background-color: map-get($theme, color-secondary);
+		box-shadow: map-get($theme, color-dark) 0 0 15px;
 		color: white;
 		border-radius: 20px;
+		z-index: 1;
+	}
+	img {
+		z-index: 1;
+	}
+}
+
+.img__1 {
+	width: 350px;
+    height: 450px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.img__2 {
+	height: 500px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.blob {
+	position: absolute;
+	width: 800px;
+	z-index: 0;
+}
+
+// Laptop
+@media only screen and (max-width: 1199px) {
+	.img__1 {
+		width: 250px;
+		height: 450px;
+		object-fit: cover;
+	}
+	.img__2 {
+		height: 500px;
+		object-fit: cover;
+	}
+}
+
+// Tablet
+@media only screen and (max-width: 991px) {
+	.img__1 {
+		width: 200px;
+		height: 250px;
+		object-fit: cover;
+	}
+	.img__2 {
+		height: 350px;
+		object-fit: cover;
+	}
+	.blob {
+		width: 500px;
+	}
+}
+
+// Mobile
+@media only screen and (max-width: 767px) {
+	#index-container2 {
+		h4.fw-bold {
+			text-align: center;
+			margin: 40px 35px 0 35px;
+		}
+		h4.fw-light {
+			text-align: center;
+			margin: 0 35px 40px 35px;
+		}
+	}
+	.img__1 {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+	}
+	.img__2 {
+		height: 500px;
+		object-fit: cover;
+	}
+	.blob {
+		display: none;
 	}
 }

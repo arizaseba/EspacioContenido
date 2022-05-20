@@ -1,40 +1,36 @@
 .btn {
-  padding: 10px 40px; }
-
-.btn:hover {
-  transition: .7s;
-  transform: scale(1.1); }
+  padding: 10px 40px;
+  border: 0;
+  border-radius: 7px; }
+  .btn:hover {
+    transition: .7s; }
 
 .btn-dark {
   background-color: #3E4F56;
   border-color: #3E4F56; }
-
-.btn-dark:hover {
-  background-color: #202020; }
+  .btn-dark:hover {
+    background-color: #202020; }
 
 .button-precios {
   color: white; }
-
-.button-precios:hover {
-  transition: all .7s;
-  transform: scale(1.2);
-  color: white; }
+  .button-precios:hover {
+    transition: all .7s;
+    transform: scale(1.2);
+    color: white; }
 
 .button-servicios {
   color: #202020; }
-
-.button-servicios:hover {
-  transition: all .7s;
-  transform: scale(1.2);
-  color: #202020; }
+  .button-servicios:hover {
+    transition: all .7s;
+    transform: scale(1.2);
+    color: #202020; }
 
 .btn-primary {
   background-color: #E97156;
   border-color: #E97156; }
-
-.btn-primary:hover {
-  background-color: #E97156;
-  border-color: #E97156; }
+  .btn-primary:hover {
+    background-color: #E97156;
+    border-color: #E97156; }
 
 .wsp-button {
   width: 70px;
@@ -43,20 +39,34 @@
   border-radius: 50%;
   right: 1em;
   bottom: 1em;
-  box-shadow: #202020 0 0 10px; }
+  box-shadow: #202020 0 0 10px;
+  z-index: 5; }
   .wsp-button a {
     color: white;
     font-size: 2.5em; }
 
-.banner {
+#banner {
   background: #3E4F56;
   background: linear-gradient(0deg, #3E4F56 0%, #202020 100%);
   height: 60vh; }
-  .banner img {
+  #banner img {
     object-fit: cover; }
-  .banner .line-h {
+  #banner .line-h {
     height: 15px;
     width: 50%; }
+  #banner h1 {
+    width: 100%;
+    animation: typing 1s steps(20), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
 
 .navbar {
   grid-area: navbar;
@@ -119,8 +129,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: auto;
-  z-index: 1; }
+  height: auto; }
 
 html, body {
   height: 100%; }
@@ -137,7 +146,6 @@ html, body {
   grid-area: main; }
 
 p {
-  z-index: 1;
   margin: 0; }
 
 a {
@@ -198,10 +206,6 @@ body {
   background-color: #E97156;
   margin: 10px 0; }
 
-.cardAnimation:hover {
-  transition: all .7s;
-  transform: scale(1.1); }
-
 .imgBorder {
   border: #E97156 solid 0.5rem; }
 
@@ -211,9 +215,6 @@ body {
 .card {
   background-color: transparent;
   border: 0; }
-
-.card-body {
-  flex: 0; }
 
 #prices-container {
   padding: 7rem 1rem;
@@ -294,12 +295,21 @@ body {
     display: inline-block;
     font-size: 18px;
     padding: 12px 30px; }
-  #prices-container .head_bg,
-  #prices-container .precio_btn a {
+  #prices-container .head_bg, #prices-container .precio_btn a {
     transition: all .5s; }
 
 #services-container {
+  background-color: #F4EDED;
   padding: 7rem 1rem; }
+  #services-container .card {
+    background-color: white; }
+
+#index-container2 {
+  padding: 7rem 1rem; }
+  #index-container2 h4.fw-bold {
+    margin: 40px 35px 0 0; }
+  #index-container2 h4.fw-light {
+    margin: 0 0 40px 35px; }
 
 #contact-form {
   position: relative;
@@ -315,6 +325,63 @@ body {
     opacity: .25; }
   #contact-form form {
     padding: 2em;
-    background-color: #202020;
+    background-color: #3E4F56;
+    box-shadow: #202020 0 0 15px;
     color: white;
-    border-radius: 20px; }
+    border-radius: 20px;
+    z-index: 1; }
+  #contact-form img {
+    z-index: 1; }
+
+.img__1 {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  z-index: 1; }
+
+.img__2 {
+  height: 500px;
+  object-fit: cover;
+  z-index: 1; }
+
+.blob {
+  position: absolute;
+  width: 800px;
+  z-index: 0; }
+
+@media only screen and (max-width: 1199px) {
+  .img__1 {
+    width: 250px;
+    height: 450px;
+    object-fit: cover; }
+  .img__2 {
+    height: 500px;
+    object-fit: cover; } }
+
+@media only screen and (max-width: 991px) {
+  .img__1 {
+    width: 200px;
+    height: 250px;
+    object-fit: cover; }
+  .img__2 {
+    height: 350px;
+    object-fit: cover; }
+  .blob {
+    width: 500px; } }
+
+@media only screen and (max-width: 767px) {
+  #index-container2 h4.fw-bold {
+    text-align: center;
+    margin: 40px 35px 0 35px; }
+  #index-container2 h4.fw-light {
+    text-align: center;
+    margin: 0 35px 40px 35px; }
+  .img__1 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; }
+  .img__2 {
+    height: 500px;
+    object-fit: cover; }
+  .blob {
+    display: none; } }

@@ -1,41 +1,43 @@
 .btn {
     padding: 10px 40px;
-}
-.btn:hover{
-    transition: .7s;
-    transform: scale(1.1);
+    border: 0;
+    border-radius: 7px;
+    &:hover{
+        transition: .7s;
+        // transform: scale(1.1);
+    }
 }
 .btn-dark {
     background-color: map-get($theme, color-secondary);
     border-color: map-get($theme, color-secondary);
-}
-.btn-dark:hover{
-    background-color: map-get($theme, color-dark);
+    &:hover{
+        background-color: map-get($theme, color-dark);
+    }
 }
 .button-precios {
     color: white;
-}
-.button-precios:hover {
-    transition: all .7s;
-    transform: scale(1.2);
-    color: white;
+    &:hover {
+        transition: all .7s;
+        transform: scale(1.2);
+        color: white;
+    }
 }
 .button-servicios {
     color: map-get($theme, color-dark);
-}
-.button-servicios:hover {
-    transition: all .7s;
-    transform: scale(1.2);
-    color: map-get($theme, color-dark);
+    &:hover {
+        transition: all .7s;
+        transform: scale(1.2);
+        color: map-get($theme, color-dark);
+    }
 }
 .btn-primary {
     background-color: map-get($theme, color-primary);
     border-color: map-get($theme, color-primary);
+    &:hover {
+        background-color: map-get($theme, color-primary);
+        border-color: map-get($theme, color-primary);
+    }
 }
-.btn-primary:hover {
-    background-color: map-get($theme, color-primary);
-    border-color: map-get($theme, color-primary);
-} 
 .wsp-button {
     width: 70px;
     height: 70px;
@@ -44,6 +46,7 @@
     right: 1em;
     bottom: 1em;
     box-shadow: map-get($theme, color-dark) 0 0 10px;
+    z-index: 5;
     a {
         color: white;
         font-size: 2.5em;
