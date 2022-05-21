@@ -72,8 +72,11 @@
   grid-area: navbar;
   box-shadow: #202020 0px 0px 10px;
   z-index: 1; }
-  .navbar .navbar-nav {
-    margin: auto; }
+  .navbar .navbar-brand img {
+    image-rendering: crisp-edges;
+    height: 40px; }
+  .navbar .navbar-collapse {
+    flex-grow: 0; }
   .navbar .nav-link {
     width: fit-content;
     color: #3E4F56 !important; }
